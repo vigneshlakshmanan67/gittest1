@@ -1,4 +1,3 @@
-#/bin/bash
 read -p "Enter N1:" n1;
 until [[ $n1 =~ ^[+]?[0-9]+$ ]]
 do 

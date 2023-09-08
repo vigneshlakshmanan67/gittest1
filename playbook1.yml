@@ -1,0 +1,10 @@
+---
+- name: ansible test process
+  hosts: server
+  tasks:
+    - name: ansible test process was started
+      shell:
+        "uptime;pwd"
+      register: datecmd
+      tags: datecmd
+    - debug: msg="{{datecmd.stdout}}"
